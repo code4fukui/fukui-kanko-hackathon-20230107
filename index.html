@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>シビッ入門＆アイデアソン</title>
+</head><body>
+<h1>シビックテック入門＆アイデアソン</h1>
+
+<section>
+<h2>▶ 発表動画</h2>
+<div>
+<p>
+  チームA<br>
+  <video src=teamA.mp4 controls><br>
+</p>
+
+<p>
+  チームB<br>
+  <video src=teamB.mp4 controls><br>
+</p>
+
+<p>
+  チームC<br>
+  <video src=teamC.mp4 controls><br>
+</p>
+
+<p>
+  チームD<br>
+  <video src=teamD.mp4 controls><br>
+</p>
+</div>
+</section>
+
+<section>
+  <h2>▶ キッズセーフ</h2>
+  <div>
+    <img src=kidssafe/IMG_5604.jpg><br>
+    <img src=kidssafe/IMG_5606.jpg><br>
+    <img src=kidssafe/IMG_5608.jpg><br>
+    <img src=kidssafe/IMG_5616.jpg><br>
+    <video src=kidssafe/bug.mp4 controls><br>
+  </div>
+</section>
+
+<section>
+  <h2>▶ 会場360度写真</h2>
+  <div>
+    <a href=group-photo/index.html><img src=group-photo/all-360.jpg></a><br>
+  </div>
+</section>
+
+<section>
+  <h2>▶ 集合写真</h2>
+  <div>
+    集合写真<br>
+    <img src=group-photo/IMG_8291.jpg><br>
+    チームA<br>
+    <img src=group-photo/IMG_8282.jpg><br>
+    チームB<br>
+    <img src=group-photo/IMG_8279.jpg><bR>
+    チームC
+    <img src=group-photo/IMG_8285.jpg><br>
+    チームD
+    <img src=group-photo/IMG_8288.jpg><br>
+  </div>
+</section>
+
+<hr>
+<a href=https://fukuidx1.peatix.com/>高校生、高専生対象！シビックテック入門＜データ分析編> | Peatix</a><br>
+<a href=https://github.com/code4fukui/fukui-kanko-hackathon-20230107>src on GitHub</a> / <a href=https://code4fukui.github.io/>Code for FUKUI</a><br>
+
+
+<script type="module">
+document.body.querySelectorAll("section").forEach(section => {
+  const h2 = section.querySelector("h2");
+  h2.style.cursor = "pointer";
+  const c = section.querySelector("div");
+  console.log(c)
+  
+  c.style.display = "none";
+  h2.onclick = () => c.style.display = c.style.display == "none" ? "" : "none";
+});
+</script>
+
+
+<style>
+img, video {
+  width: 95vw;
+}
+</style>

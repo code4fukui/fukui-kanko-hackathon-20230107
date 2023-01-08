@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<script type="module">
+import { cr, rgb, asset } from "https://js.sabae.cc/aframe.js";
+
+const scene = cr("a-scene", document.body);
+const sky = cr("a-sky");
+sky.setAttribute("src", "./all-360.jpg");
+sky.setAttribute("rotation", { x: 0, y: -90, z: 0 });
+sky.setAttribute("radius", 10);
+scene.appendChild(sky);
+</script>
